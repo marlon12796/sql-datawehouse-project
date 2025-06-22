@@ -9,7 +9,8 @@ Script Purpose:
 	  Run this script to re-define the DDL structure of 'bronze' Tables
 ===============================================================================
 */
-
+USE DataWarehouse;
+GO
 IF SCHEMA_ID('bronze') IS NULL
     EXEC('CREATE SCHEMA bronze');
 GO

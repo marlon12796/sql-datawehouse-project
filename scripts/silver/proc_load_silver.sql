@@ -261,14 +261,3 @@ BEGIN
    PRINT '>> Fin global: ' + CONVERT(NVARCHAR,@global_end,120);
    PRINT '====================================================';
 END;
-
-EXEC silver.load_all;
-
-
-SELECT
-*
-FROM silver.crm_prd_info
-ORDER BY  prd_nm,prd_end_dt
-
-
-select * from   DataWarehouse.bronze.crm_sales_details WHERE sls_prd_key='TT-R982';
